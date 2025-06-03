@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | PhishProtect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    code {
+      background: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+    a {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy for PhishProtect</h1>
+  <p><strong>Effective Date:</strong> [Insert Date]</p>
+
+  <h2>1. Overview</h2>
+  <p>PhishProtect is a Chrome Extension designed to protect users from phishing threats in Gmail. It detects suspicious links using a combination of trusted domains, blacklist rules, punycode decoding, homograph detection, and typo-squatting analysis.</p>
+
+  <h2>2. Information We Collect</h2>
+  <p>PhishProtect does <strong>not</strong> collect any personally identifiable information (PII) or track user activity. The extension uses local browser storage to cache trusted domain lists and user-defined whitelists.</p>
+  <p>When a suspicious domain is hovered over, the extension may send the following <strong>non-sensitive metadata</strong> to our secure backend:</p>
+  <ul>
+    <li>Hovered domain name</li>
+    <li>Timestamp</li>
+    <li>Email sender and recipient (extracted from the Gmail UI)</li>
+  </ul>
+  <p>This is used solely for internal phishing analysis. No message content or sensitive data is captured.</p>
+
+  <h2>3. How We Use Data</h2>
+  <p>Any data processed is strictly used for:</p>
+  <ul>
+    <li>Classifying suspicious URLs</li>
+    <li>Alerting internal security teams (optional)</li>
+    <li>Improving phishing detection heuristics</li>
+  </ul>
+  <p>We never sell, rent, or share user data. No advertising or analytics services are used.</p>
+
+  <h2>4. Chrome Permissions Justification</h2>
+  <p>PhishProtect uses the following permissions:</p>
+  <ul>
+    <li><code>storage</code>: To store trusted domains and user whitelist settings</li>
+    <li><code>https://storage.googleapis.com/*</code>: To fetch static domain classification TXT files</li>
+    <li><code>https://mail.google.com/*</code>: To monitor links in Gmail</li>
+    <li><code>https://hooks.slack.com/*</code>: (Optional) To send alerts to internal Slack channels</li>
+  </ul>
+  <p>No remote JavaScript is executed. All fetched resources are parsed as text.</p>
+
+  <h2>5. Data Security</h2>
+  <p>All data sent to backend systems is transmitted over HTTPS. We use secure authentication and adhere to industry best practices to protect any metadata exchanged.</p>
+
+  <h2>6. User Control</h2>
+  <p>Users can manage their whitelist settings at any time via the extension's options page. Uninstalling the extension deletes all stored data. There is no telemetry, tracking, or analytics.</p>
+
+  <h2>7. Children’s Privacy</h2>
+  <p>This extension is not intended for children under 13 and does not knowingly collect data from them.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>We may update this policy periodically. The "Effective Date" will be updated accordingly. Users will be notified of material changes via the extension or listing page.</p>
+
+  <h2>9. Contact Us</h2>
+  <p>If you have questions or concerns about this policy:</p>
+  <p>
+    <strong>PhishProtect Security Team</strong><br/>
+    📧 Email: <a href="mailto:security@yourdomain.com">security@yourdomain.com</a><br/>
+    🌐 Website: <a href="https://yourdomain.com/phishprotect">https://yourdomain.com/phishprotect</a>
+  </p>
+
+  <hr />
+  <p><strong>Summary:</strong> PhishProtect respects user privacy. We do not track, profile, or collect personal data. All operations are security-focused and limited to the intended purpose of phishing protection in Gmail.</p>
+
+</body>
+</html>
